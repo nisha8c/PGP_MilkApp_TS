@@ -1,5 +1,12 @@
 # PGP_MilkApp_TS
 
+![1](https://user-images.githubusercontent.com/108927164/214955081-7c5052ff-8beb-4b9f-8e91-667ca1ced030.jpg)
+
+
+![2](https://user-images.githubusercontent.com/108927164/214955106-a48914c2-d94d-4ec5-8642-14a961dad537.jpg)
+
+
+
 ## Frontend:
 1. Reatc JS
 2. Tailwind CSS

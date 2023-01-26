@@ -54,7 +54,7 @@
       }
   
       a {
-        color: var(--gray-color);
+        color: black;
         text-decoration: none;
         flex-direction: column;
   
@@ -64,15 +64,10 @@
         transition: all 0.3s ease-in-out;
   
         &:hover {
-          color: var(--secondary-color);
+          color: gray;
         }
       }
   
-      &:hover {
-        div {
-          background: var(--secondary-color);
-        }
-      }
     }
   
     @media screen and (max-width: 900px) {
@@ -89,13 +84,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: rgb(231, 223, 223);
   
   
     svg {
       width: 70%;
       height: 70%;
-      color: var(--white-color);
+      color: white;
     }
   
     div {
@@ -115,7 +110,7 @@
       align-items: flex-end;
       flex-direction: column;
       
-      background-color: var(--white-color);
+      background-color: rgb(223, 216, 216);
       background-size: cover;
       background-repeat: repeat;
   
@@ -125,7 +120,6 @@
       svg {
         width: 35px;
         height: 35px;
-        color: var(--secondary-color);
         margin: 0.5rem 1rem;
       }
   
@@ -145,7 +139,7 @@
           margin: 1rem;
   
           a {
-            color: var(--gray-color);
+            color: black;
             text-decoration: none;
             font-size: 1rem;
             text-transform: uppercase;
@@ -154,7 +148,7 @@
             transition: all 0.3s ease-in-out;
   
             &:hover {
-              color: var(--secondary-color);
+              color: white;
             }
           }
         }

@@ -77,7 +77,7 @@
 10. Checkout page and confirm order/ success page
 
 ## Functionalities yet to be handled:
-1. Pagination
+1. Pagination (Logic is added in server side but havent implemented it yet at client side. For now it displays all with fetch all) 
 2. Payment gateway
 
 

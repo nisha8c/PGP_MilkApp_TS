@@ -67,7 +67,7 @@
 ## App is capable of:
 1. connecting with MONGO DB database
 2. REST API get and get all and get by id
-3. display results / products on frontend with filters as per milk type and can also display single / individual product.
+3. display results / products on frontend with filters as per product name and can also display single / individual product.
 4. Go to top button
 5. Shopping basket with products displayed with total amount remove button and other navigation links
 6. Add and remove the product / milk in liters in basket/cart

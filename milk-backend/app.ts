@@ -3,7 +3,8 @@ import cors from 'cors';
 import { Request, Response, Application } from 'express';
 const {
     getAllMilkProducts,
-    getMilkProductById
+    getMilkProductById,
+    getPaginatedMilkProducts
 
 } = require('./controllers/product.controllers');
 
@@ -20,6 +21,7 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.get('/api/products', getAllMilkProducts);
+app.get('/api/products/:page/:limit', getPaginatedMilkProducts);
 app.get('/api/products/:id', getMilkProductById);
 
 

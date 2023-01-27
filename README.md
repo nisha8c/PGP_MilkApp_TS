@@ -79,7 +79,6 @@
 ## Functionalities yet to be handled:
 1. Pagination
 2. Payment gateway
-3. Quantity Slider
 
 
 

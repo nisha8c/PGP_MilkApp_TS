@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Col, Button, Container, Stack } from 'react-bootstrap';
+import { Row, Col, Container, Stack, Dropdown, DropdownButton } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { ProductsData } from '../types/types';
@@ -55,20 +55,29 @@ let productInfo;
       </Row>
 
       <Row>
-      <div className='search-container'>
-        <input value={phrase} onChange={e => setPhrase(e.target.value)} type="text" placeholder="Search by product name..." className="bg-gray-200 w-full py-2 px-4 rounded-xl mb-8"/>
-      </div>
+      
       </Row>
 
-      <Stack gap={4}>
-        <Col>
+      <Stack direction="horizontal" gap={2}>
 
-        {['Cashew milk', 'Pea milk', 'Walnut milk', 'Rice milk', 'Coconut milk', 'Hemp milk', 'Almond milk', 'Oat milk', 'Macadamia milk', 'All'].map((item, index) => (
-          <>
-          <Button variant="outline-primary" onClick={() => handleFilter(item)} key={index}>{item}</Button> {' '}
-          </>
-        ))}
-        </Col>
+        <Row>
+          <Col xs="auto">
+          <div className='search-container'>
+            <input value={phrase} onChange={e => setPhrase(e.target.value)} type="text" placeholder="Search by product name..." className="bg-gray-200 w-full py-2 px-4 rounded-xl mb-8"/>
+          </div>
+          </Col>
+
+          <Col xs="auto" sm={1}>
+          <DropdownButton id="dropdown-item-button" title="Filter" variant="outline-primary">
+            <Dropdown.ItemText className="font-semibold">Milk Type</Dropdown.ItemText>
+            {['Cashew milk', 'Pea milk', 'Walnut milk', 'Rice milk', 'Coconut milk', 'Hemp milk', 'Almond milk', 'Oat milk', 'Macadamia milk', 'All'].map((item, index) => (
+              <>
+              <Dropdown.Item as="button" onClick={() => handleFilter(item)} key={index}>{item}</Dropdown.Item>
+              </>
+            ))}
+          </DropdownButton>
+          </Col>
+        </Row>
       </Stack>
 
       

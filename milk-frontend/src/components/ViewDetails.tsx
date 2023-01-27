@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, ChangeEvent } from 'react';
 import { ProductsData } from '../types/types';
 import { useParams } from 'react-router-dom';
 import { Card, Button, Stack } from 'react-bootstrap';
@@ -14,7 +14,7 @@ const ViewDetails = () => {
     const { id } = useParams();
     const [milk, setMilk] = useState<ProductsData>();
     const navigate = useNavigate();
-    //const [liters, setLiters] = useState('');
+    const [rangeValue, setRangeValue] = useState<number>(1);
 
     useEffect(() => {
         const getData = async () => {
@@ -41,14 +41,16 @@ const ViewDetails = () => {
         
     };
 
+    const handleAmountChange = (event: ChangeEvent<HTMLInputElement>) => setRangeValue(Number(event.currentTarget.value));
+
     return (
         <>
             <Button variant="outline-primary" onClick={handleGoBack} className='mt-20'>Go Back</Button>
             <Stack gap={4}>
-                <Card style={{ width: '18rem', margin: '10px', height: '38rem' }}>
+                <Card style={{ width: '18rem', margin: '10px', height: '45rem' }}>
                     <Card.Header><Card.Title>{milk?.name}</Card.Title></Card.Header>
 
-                    <Card.Img variant="top" src={milkPackPic} alt="milk-image" />
+                    <Card.Img variant="top" src={milkPackPic} alt="milk-image" className='pt-1' />
 
                     <Card.Body>
                         <Card.Text>
@@ -62,8 +64,22 @@ const ViewDetails = () => {
                         <Card.Text>
                            SEK {milk?.price}
                         </Card.Text>
-                        
-                        <Button onClick={addProductToCart}>Add 1 liter to Cart</Button>
+
+                        <Card.Text>
+                        <input
+                            type="range"
+                            className="w-full h-6 p-0 focus:outline-none focus:ring-0 accent-[#00fc07]"
+                            min="range"
+                            max={milk?.quantity}
+                            step="1"
+                            defaultValue={rangeValue}
+                            id="rangeSelect"
+                            onChange={e => handleAmountChange(e)}
+                            data-testid="rangeSelect"
+                            />
+                            <p className="text-base bg-white px-4 py-2 rounded w-24 text-center"> {rangeValue} liter</p>
+                            </Card.Text>
+                        <Button onClick={addProductToCart}>Add to Cart</Button>
                     </Card.Body>
                     <Card.Footer className="text-muted">{milk?.quantity} liters in stock
                     </Card.Footer>

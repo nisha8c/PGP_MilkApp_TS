@@ -1,15 +1,44 @@
 # PGP_MilkApp_TS
 
+## All products
+![1](https://user-images.githubusercontent.com/108927164/215062012-71a92ddc-4d5e-4f44-947e-87f85eda3c95.jpg)
+#
 
-![1](https://user-images.githubusercontent.com/108927164/214955081-7c5052ff-8beb-4b9f-8e91-667ca1ced030.jpg)
+## Search
+![2](https://user-images.githubusercontent.com/108927164/215062046-1a4fd63c-81ca-4a49-8b26-b411cd7b15fa.jpg)
 #
-![2](https://user-images.githubusercontent.com/108927164/214955106-a48914c2-d94d-4ec5-8642-14a961dad537.jpg)
+
+## Filter
+![3](https://user-images.githubusercontent.com/108927164/215062086-0c36b31b-d7ea-41c2-b530-dc3545628b5d.jpg)
 #
-![3](https://user-images.githubusercontent.com/108927164/214958289-4e8fc0a6-6634-493f-9573-26dfa5c63648.jpg)
+
+## Mobile View
+![4](https://user-images.githubusercontent.com/108927164/215062130-ae9b9b7e-f88b-4adb-847b-5b3082ea9be4.jpg)
 #
-![4](https://user-images.githubusercontent.com/108927164/214958344-867517d8-b271-4548-a705-9980082c804e.jpg)
+
+## Hamburger Menu
+![5](https://user-images.githubusercontent.com/108927164/215062163-58e294c5-32e3-4981-a8c8-1bee06e889c1.jpg)
 #
-![5](https://user-images.githubusercontent.com/108927164/214958374-b964539a-1594-4069-9b04-51578f0c8a84.jpg)
+
+## View Individual Product
+![6](https://user-images.githubusercontent.com/108927164/215062188-82ce5fb8-3d7e-422e-b16d-77896776185d.jpg)
+#
+
+## Basket
+![7](https://user-images.githubusercontent.com/108927164/215062214-2e7ca19c-e062-4c87-a0b4-ab27b3c9fb3a.jpg)
+#
+
+## Mobile View : Bag
+![8](https://user-images.githubusercontent.com/108927164/215062233-a6fbb264-a089-42d8-b252-411bffd2c5c7.jpg)
+#
+
+## Desktop View: Bag
+![9](https://user-images.githubusercontent.com/108927164/215062286-227ccf7b-cb8e-4ede-94bf-7682fb0f6529.jpg)
+#
+
+## Thank you
+![10](https://user-images.githubusercontent.com/108927164/215062311-fa2b63bb-09f6-4cf1-8230-304763ffe7e7.jpg)
+
 #
 
 ## Frontend:
